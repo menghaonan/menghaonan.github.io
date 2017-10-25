@@ -95,18 +95,20 @@
 
 
 
-<meta name="description" content="数据结构——图的基本概念">
+<meta name="description" content="数据结构——出入栈实验程序">
 <meta name="keywords" content="课程,数据结构">
 <meta property="og:type" content="article">
-<meta property="og:title" content="“数据结构--图”">
-<meta property="og:url" content="http://yoursite.com/2017/10/24/“数据结构-图/index.html">
+<meta property="og:title" content="数据结构——出入栈">
+<meta property="og:url" content="http://yoursite.com/2017/10/25/数据结构——出入栈/index.html">
 <meta property="og:site_name" content="燕小乙的镜湖">
-<meta property="og:description" content="数据结构——图的基本概念">
+<meta property="og:description" content="数据结构——出入栈实验程序">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-24T14:09:43.472Z">
+<meta property="og:image" content="http://yoursite.com/images/数据结构实验结果2.jpg">
+<meta property="og:updated_time" content="2017-10-25T03:59:32.627Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="“数据结构--图”">
-<meta name="twitter:description" content="数据结构——图的基本概念">
+<meta name="twitter:title" content="数据结构——出入栈">
+<meta name="twitter:description" content="数据结构——出入栈实验程序">
+<meta name="twitter:image" content="http://yoursite.com/images/数据结构实验结果2.jpg">
 
 
 
@@ -136,13 +138,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/10/24/“数据结构-图/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/10/25/数据结构——出入栈/"/>
 
 
 
 
 
-  <title>“数据结构--图” | 燕小乙的镜湖</title>
+  <title>数据结构——出入栈 | 燕小乙的镜湖</title>
   
 
 
@@ -289,7 +291,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/24/“数据结构-图/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/25/数据结构——出入栈/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="（ Y x Y ）">
@@ -306,7 +308,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">“数据结构--图”</h1>
+          <h1 class="post-title" itemprop="name headline">数据结构——出入栈</h1>
         
 
         <div class="post-meta">
@@ -318,8 +320,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-24T21:51:13+08:00">
-                2017-10-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-25T11:25:59+08:00">
+                2017-10-25
               </time>
             
 
@@ -378,43 +380,17 @@
       
 
       
-        <h1 id="数据结构——图的基本概念"><a href="#数据结构——图的基本概念" class="headerlink" title="数据结构——图的基本概念"></a><strong><em>数据结构——图的基本概念</em></strong></h1><a id="more"></a>
-<h2 id="基本术语"><a href="#基本术语" class="headerlink" title="基本术语"></a>基本术语</h2><ol>
-<li><p>图（graph）：图是由顶点的有穷非空集合和顶点之间边的集合组成，通常表示为：G(V,E)，其中，G表示一个图，V是图G中的顶点的集合，E是图G中边的集合。</p>
-</li>
-<li><p>顶点(Vertex)：图中的数据元素。线性表中我们把数据元素叫元素，树中将数据元素叫结点。</p>
-</li>
-<li><p>边：顶点之间的逻辑关系用边来表示，边集可以是空的。</p>
-</li>
-<li><p>无向边(Edge)：若顶点V1到V2之间的边没有方向，则称这条边为无向边。</p>
-</li>
-<li><p>无向图(Undirected graphs)：图中任意两个顶点之间的边都是无向边。（A,D）=（D,A）</p>
-</li>
-<li><p>有向边：若从顶点V1到V2的边有方向，则称这条边为有向边，也称弧(Arc)。用<v1,v2>表示，V1为狐尾(Tail)，V2为弧头(Head)。（V1，V2）≠（V2，V1）。</v1,v2></p>
-</li>
-<li><p>有向图(Directed graphs)：图中任意两个顶点之间的边都是有向边。注意：无向边用“（）”，而有向边用“&lt; &gt;”表示。</p>
-</li>
-<li><p>简单图：图中不存在顶点到其自身的边，且同一条边不重复出现。</p>
-</li>
-<li><p>无向完全图：无向图中，任意两个顶点之间都存在边。</p>
-</li>
-<li><p>有向完全图：有向图中，任意两个顶点之间都存在方向互为相反的两条弧。</p>
-</li>
-<li><p>稀疏图：有很少条边。</p>
-</li>
-<li><p>稠密图：有很多条边。</p>
-</li>
-<li><p>权（Weight）：与图的边或弧相关的数。</p>
-</li>
-<li><p>网（Network）：带权的图。</p>
-</li>
-<li><p>度（Degree）：无向图中，与顶点V相关联的边的数目。有向图中，入度表示指向自己的边的数目，出度表示指向其他边的数目，该顶点的度等<br>于入度与出度的和。</p>
-</li>
-<li><p>路径的长度：一条路径上边或弧的数量。</p>
-</li>
-<li><p>连通图：图中任意两个顶点都是连通的。</p>
-</li>
-</ol>
+        <h1 id="数据结构——出入栈实验程序"><a href="#数据结构——出入栈实验程序" class="headerlink" title="数据结构——出入栈实验程序"></a><strong><em>数据结构——出入栈实验程序</em></strong></h1><a id="more"></a>
+<p>#include <stdio.h></stdio.h></p>
+<p>#include <stdlib.h></stdlib.h></p>
+<p>#define OK 1</p>
+<p>#define ERROR 0</p>
+<p>#define OVERFLOW -2</p>
+<p>typedef int ElemType; typedef int Status;<br>//—–  栈的顺序存储表示 —–</p>
+<p>#define    STACK_INIT_SIZE    100 //  存储空间的初始分配量</p>
+<p>#define    STACKINCREMENT      10    //  存储空间的分配增量<br>typedef struct {<br>    ElemType <em>base; ElemType  </em>top; int   stacksize;<br>} SqStack;<br>//  构造一个空栈 S<br>Status InitStack(SqStack &amp;S){<br>    S.base = (ElemType <em>)malloc(STACK_INIT_SIZE </em> sizeof(ElemType));<br>    if(!S.base) exit (OVERFLOW);<br>    S.top = S.base;<br>    S.stacksize = STACK_INIT_SIZE; return OK;<br>}<br>// 判栈 S 是否为空栈<br>Status StackEmpty(SqStack S){ if (S.top==S.base) return OK; else return ERROR;<br>}<br>//入栈函数<br>Status Push (SqStack &amp;S, ElemType e) {<br>    if(S.top-S.base&gt;=S.stacksize){<br>        S.base=(ElemType<em>)realloc(S.base,(S.stacksize+STACKINCREMENT)</em>sizeof(ElemType));<br>    if(!S.base)exit(OVERFLOW);<br>    S.top=S.base+S.stacksize;<br>    S.stacksize+=STACKINCREMENT;<br> }<br>   <em>S.top++=e;<br>   return OK;<br>}<br>//出栈函数<br>Status Pop (SqStack &amp;S, ElemType &amp;e) {<br>    if(S.top==S.base)return ERROR;<br>    e=</em>–S.top;<br>    return OK;<br>}<br>//输出顺序栈函数</p>
+<p>void OutStack(SqStack S)<br>{     int <em>p;<br>    if(S.top == S.base){<br>    printf(“这是一个空栈！”);<br>}<br>    else<br>    for(p= S.top-1; p&gt;= S.base;p–)<br>    printf(“%6d”, </em>p);<br>    printf(“\n”);<br>}<br>//主函数<br>int main()<br>{     SqStack s;<br>    int cord;<br>    ElemType a;<br>    printf(“第一次使用必须初始化！\n”);<br>do{<br>    printf(“\n 主菜单 \n”);<br>    printf(“ 1 初始化顺序栈 “);<br>    printf(“ 2 插入一个元素 “);<br>    printf(“ 3 删除栈顶元素 “);<br>    printf(“ 4 结束程序运行 “);<br>    printf(“\n——————————————————————————\n”);<br>    printf(“请输入您的选择( 1, 2, 3, 4)”);<br>    scanf(“%d”,&amp;cord);<br>    printf(“\n”);<br>    switch(cord)<br>    { case 1:<br>    InitStack(s);<br>    OutStack(s);<br>    break;<br>    case 2:<br>    printf(“请输入要插入的数据元素：a=”);<br>    scanf(“%d”,&amp;a);<br>    Push(s,a);<br>    printf(“%d 进栈之后的栈：”,a);<br>    OutStack(s);<br>    break;<br>    case 3:<br>    Pop(s,a);<br>    printf(“栈顶元素 %d 出栈之后的栈：”,a);<br>    OutStack(s);<br>    break;<br>    case 4:<br>    exit(0);<br>   }<br>  }while (cord&lt;=4);<br>}</p>
+<h2 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h2><p><img src="/images/数据结构实验结果2.jpg" alt="&quot;数据结构实验结果&quot;"></p>
 
       
     </div>
@@ -447,8 +423,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/11/“逻辑运算公式”/" rel="next" title="“逻辑运算公式”">
-                <i class="fa fa-chevron-left"></i> “逻辑运算公式”
+              <a href="/2017/10/24/“数据结构-图/" rel="next" title="“数据结构--图”">
+                <i class="fa fa-chevron-left"></i> “数据结构--图”
               </a>
             
           </div>
@@ -456,10 +432,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/10/25/数据结构——出入栈/" rel="prev" title="数据结构——出入栈">
-                数据结构——出入栈 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -596,7 +568,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据结构——图的基本概念"><span class="nav-number">1.</span> <span class="nav-text">数据结构——图的基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本术语"><span class="nav-number">1.1.</span> <span class="nav-text">基本术语</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据结构——出入栈实验程序"><span class="nav-number">1.</span> <span class="nav-text">数据结构——出入栈实验程序</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#实验结果"><span class="nav-number">1.1.</span> <span class="nav-text">实验结果</span></a></li></ol></li></ol></div>
             
 
           </div>
